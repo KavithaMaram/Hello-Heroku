@@ -1,0 +1,33 @@
+{
+  "name": "Hello-Heroku",
+  "description": "",
+  "scripts": {
+    "postdeploy": "test",
+    "pr-predestroy": "test"
+  },
+  "env": {
+    "HEROKU_POSTGRESQL_SILVER_URL": {
+      "required": true
+    },
+    "JAVA_OPTS": {
+      "required": true
+    },
+    "PATH": {
+      "required": true
+    },
+    "REPO": {
+      "required": true
+    },
+    "SBT_OPTS": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+
+  ]
+}
